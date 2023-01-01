@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist | When Banking meets Minimalist</title>
+  </head>
+  <body>
+    <div class="section_slider">
+      <div class="section_slide sslide--1" id="sec--1">
+        <div class="header__title">
+          <h1>
+            Building<br />
+            <!-- Green highlight effect -->
+
+            Responsive<br />
+            <span class="highlight">Web Applications</span>
+          </h1>
+          <h4>
+            A JavaScript web developer,<br />I specialize in web developement
+            using MVC approach, OOP concept (ES6)
+          </h4>
+
+          <button class="btn--text btn--scroll-to">
+            Contact Me &DownArrow;
+          </button>
+
+          <img
+            src="./src/img/IMG_9284.jpg"
+            class="header__img"
+            alt="Minimalist bank items"
+          />
+        </div>
+      </div>
+      <div class="section_slide sslide--2" id="sec--2">
+        <section class="section">
+          <div class="section__title section__title--testimonials">
+            <h2 class="section__description">Not sure yet?</h2>
+            <h3 class="section__header">
+              Millions of Bankists are already making their lifes simpler.
+            </h3>
+          </div>
+        </section>
+      </div>
+      <div class="section_slide sslide--3" id="sec--3">
+        <section class="section">
+          <div class="section__title section__title--testimonials">
+            <h2 class="section__description">Not sure yet?</h2>
+            <h3 class="section__header">
+              Millions of Bankists are already making their lifes simpler.
+            </h3>
+          </div>
+        </section>
+      </div>
+
+      <button class="slider__btn slider__btn--left">&larr;</button>
+      <button class="slider__btn slider__btn--right">&rarr;</button>
+    </div>
+
+    <!-- <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div> -->
+    <div class="dots"></div>
+    <div class="overlay hidden"></div>
+
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" data-nav="1" href="#sec--1">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" data-nav="2" href="#sec--2">Works</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" data-nav="3" href="#sec--3">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="./src/js/controller.js"></script>
+  </body>
+</html>
