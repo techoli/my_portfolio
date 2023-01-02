@@ -16,6 +16,10 @@ const slider = function () {
   const leftBtnslide = document.querySelector(".slider__btn--left");
   const dotContainer = document.querySelector(".dots");
   const Mnav = document.querySelector(".nav");
+  const btncontact = document.querySelector(".btn--text");
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".overlay");
+  const closeModal = document.querySelector(".btn--close-modal");
   console.log(slides);
   let currentSlide = 0;
   const maxslide = slides.length;
@@ -145,7 +149,12 @@ const slider = function () {
     changeNav(btn);
   });
 
-  //   console.log("let me see the controller");
+  [btncontact, overlay, closeModal].forEach((el) =>
+    el.addEventListener("click", function () {
+      modal.classList.toggle("hidden");
+      overlay.classList.toggle("hidden");
+    })
+  );
 };
 slider();
 // My implementation portfolio start
