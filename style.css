@@ -181,7 +181,7 @@ h4 {
 }
 .section_slider {
   max-width: 100%;
-  height: 50rem;
+  height: 60rem;
   top: 10rem;
   margin: 0 auto;
   position: relative;
@@ -194,7 +194,7 @@ h4 {
   position: absolute;
 
   width: 100%;
-  height: 50rem;
+  height: 60rem;
 
   display: flex;
   align-items: center;
@@ -240,8 +240,8 @@ h4 {
   height: 100%;
 }
 .port_list {
-  height: 12rem;
-  margin-bottom: 1.5rem;
+  height: 14rem;
+  margin-bottom: 1.9rem;
 }
 
 .port_list_item_btn {
@@ -249,7 +249,7 @@ h4 {
   width: 80%;
   transition: all 0.4s;
   position: relative;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 .port_list_item_btn_r {
   float: right;
@@ -290,6 +290,49 @@ h4 {
 
 .code_img_link {
   bottom: 0;
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* margin-top: 20px !important; */
+  border-radius: 5px !important;
+  padding: 20px !important;
+}
+.resume {
+  height: 100%;
+  width: 40%;
+  align-items: center;
+  left: 60rem;
+  position: relative;
+}
+/* .vl {
+  border-left: 2px solid grey;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+} */
+.download_img {
+  position: absolute;
+  bottom: 5rem;
+  left: 15rem;
+  size: 5rem;
+  /* background-color: green; */
+  transition: all 0.4s;
+  /* display: flex; */
+}
+.download_img:hover {
+  transform: scale(1.2);
+}
+.download_img > p {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.download_img > a {
+  /* display: flex; */
+  align-items: center;
+  list-style: none;
 }
 
 /* My implementation portfolio end---------------------------*/
