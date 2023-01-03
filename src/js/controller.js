@@ -20,7 +20,8 @@ const slider = function () {
   const modal = document.querySelector(".modal");
   const overlay = document.querySelector(".overlay");
   const closeModal = document.querySelector(".btn--close-modal");
-  console.log(slides);
+  const worsDet = document.querySelector(".sslide--2");
+  //   console.log(worsDet);
   let currentSlide = 0;
   const maxslide = slides.length;
   //   sliderzz.style.overflow = "visible";
@@ -155,6 +156,33 @@ const slider = function () {
       overlay.classList.toggle("hidden");
     })
   );
+  // responsive works
+  worsDet.addEventListener("mouseover", function (e) {
+    const hasTarget = e.target.classList.contains("port_list_item_btn");
+
+    if (!hasTarget) return;
+    const checkclick = e.target;
+    const element = checkclick
+      .closest(".sslide--2")
+      .querySelectorAll(".port_list_item_btn")
+      // console.log(element);
+      .forEach((el) => {
+        if (el !== checkclick) el.style.opacity = 0.5;
+      });
+  });
+  worsDet.addEventListener("mouseout", function (e) {
+    const hasTarget = e.target.classList.contains("port_list_item_btn");
+
+    if (!hasTarget) return;
+    const checkclick = e.target;
+    const element = checkclick
+      .closest(".sslide--2")
+      .querySelectorAll(".port_list_item_btn")
+      // console.log(element);
+      .forEach((el) => {
+        if (el !== checkclick) el.style.opacity = 1;
+      });
+  });
 };
 slider();
 // My implementation portfolio start
