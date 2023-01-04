@@ -159,9 +159,11 @@ const slider = function () {
   // responsive works
   worsDet.addEventListener("mouseover", function (e) {
     const hasTarget = e.target.classList.contains("port_list_item_btn");
+    const hasTarget2 = e.target.closest(".port_list_item_btn");
 
-    if (!hasTarget) return;
+    if (!hasTarget && !hasTarget2) return;
     const checkclick = e.target;
+    // console.log(checkclick);
     const element = checkclick
       .closest(".sslide--2")
       .querySelectorAll(".port_list_item_btn")
@@ -172,8 +174,9 @@ const slider = function () {
   });
   worsDet.addEventListener("mouseout", function (e) {
     const hasTarget = e.target.classList.contains("port_list_item_btn");
+    const hasTarget2 = e.target.closest(".port_list_item_btn");
 
-    if (!hasTarget) return;
+    if (!hasTarget && !hasTarget2) return;
     const checkclick = e.target;
     const element = checkclick
       .closest(".sslide--2")
